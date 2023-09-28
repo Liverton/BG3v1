@@ -1,0 +1,44 @@
+body {
+  background-image: url("img/Snerario02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-size: 100% 100%;*/
+}
+
+.container {
+  width: 500px;
+  height: 700px;
+  background-color: rgba(141, 123, 104, 0.6);
+}
+
+.races {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.races li {
+  display: block;
+  padding: 10px;
+  background-color: rgba(113, 98, 83, 0.4);
+}
+
+.races li div.race-name {
+  display: block;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.races li img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 10px;
+}
+
+.collapse {
+  display: none; /* Classe para ocultar elementos */
+}
