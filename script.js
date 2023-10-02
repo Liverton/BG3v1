@@ -1,53 +1,60 @@
 document.addEventListener("DOMContentLoaded", function () {
   const showRacesButton = document.getElementById("showRacesButton");
   const racesList = document.getElementById("races-list");
-  const elfOption = document.getElementById("elf-option");
-  const drowOption = document.getElementById("drow-option");
   const raceOptions = document.getElementById("race-options");
-  const highElfOption = document.getElementById("high-elf-option");
-  const woodElfOption = document.getElementById("wood-elf-option");
-  const lolthDrowOption = document.getElementById("lolth-drow-option");
-  const seldarineDrowOption = document.getElementById("seldarine-drow-option");
-
-  
-
+  const subRacePrompt = document.getElementById("subRacePrompt"); // Adicionado o ID
 
   showRacesButton.addEventListener("click", function () {
     racesList.classList.toggle("collapse");
-    raceOptions.classList.add("collapse"); // Oculta o quadro de escolha ao mostrar a lista de raças
+    raceOptions.classList.toggle("collapse");
+
+    // Oculta as opções de sub-raça quando a lista de raças é fechada
+    if (racesList.classList.contains("collapse")) {
+      const subRaceOptions = document.querySelectorAll("#race-options li");
+      subRaceOptions.forEach(function (subRaceOption) {
+        subRaceOption.classList.add("collapse");
+      });
+
+      // Oculta o texto "Escolha uma sub-raça:"
+      subRacePrompt.classList.add("collapse");
+    } else {
+      // Mostra o texto "Escolha uma sub-raça:" quando a lista de raças é aberta
+      subRacePrompt.classList.remove("collapse");
+    }
   });
 
-  // Adicione um evento de clique para o elemento Elf
+  // Função genérica para mostrar/ocultar opções de sub-raça
+  function toggleSubRaceOptions(race) {
+    const subRaceOptions = document.querySelectorAll("#race-options li");
+    for (const subRaceOption of subRaceOptions) {
+      if (subRaceOption.dataset.race === race) {
+        subRaceOption.classList.remove("collapse");
+      } else {
+        subRaceOption.classList.add("collapse");
+      }
+    }
+  }
+
+  // Eventos de clique para as raças principais
+  const elfOption = document.querySelector("#races-list li[data-race='Elf']");
+  const drowOption = document.querySelector("#races-list li[data-race='Drow']");
+
   elfOption.addEventListener("click", function () {
-    raceOptions.classList.toggle("collapse"); // Mostra ou oculta o quadro de escolha ao clicar em Elf
+    toggleSubRaceOptions("Elf");
+    raceOptions.classList.toggle("collapse");
   });
 
-  // Adicione eventos de clique para as opções de sub-raça
-  highElfOption.addEventListener("click", function (event) {
-    event.stopPropagation(); // Impede que o clique na sub-raça se propague para o elemento Elf
-    // Implemente o código para lidar com a escolha de High Elf aqui
-  });
-
-  woodElfOption.addEventListener("click", function (event) {
-    event.stopPropagation(); // Impede que o clique na sub-raça se propague para o elemento Elf
-    // Implemente o código para lidar com a escolha de Wood Elf aqui
-  });
-
-  // Adicione um evento de clique para o elemento Drow
   drowOption.addEventListener("click", function () {
-    raceOptions.classList.toggle("collapse"); // Mostra ou oculta o quadro de escolha ao clicar em Drow
+    toggleSubRaceOptions("Drow");
+    raceOptions.classList.toggle("collapse");
   });
 
-  // Adicione eventos de clique para as opções de sub-raça
-  lolthDrowOption.addEventListener("click", function (event) {
-    event.stopPropagation(); // Impede que o clique na sub-raça se propague para o elemento Elf
-    // Implemente o código para lidar com a escolha de High Elf aqui
-  });
-
-  seldarineDrowOption.addEventListener("click", function (event) {
-    event.stopPropagation(); // Impede que o clique na sub-raça se propague para o elemento Elf
-    // Implemente o código para lidar com a escolha de Wood Elf aqui
+  // Eventos de clique para as sub-raças
+  const subRaceOptions = document.querySelectorAll("#race-options li");
+  subRaceOptions.forEach(function (subRaceOption) {
+    subRaceOption.addEventListener("click", function (event) {
+      event.stopPropagation();
+      // Lógica para lidar com a escolha da sub-raça aqui
+    });
   });
 });
-
-
