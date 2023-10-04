@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <title>Lista de raças</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
 <body>
   <div class="container">
     <button id="showRacesButton" data-toggle="collapse" data-target="#races-list">
-      Races
+      Race
     </button>
     <ul class="races collapse" id="races-list">
       <li data-race="Human">
@@ -36,6 +35,43 @@
         </div>
         <img src="img/Half-Orc.png" alt="Half-Orc">
       </li>
+      <!-- New Races -->
+      <li data-race="Half-Elf">
+        <div class="race-name">
+          Half-Elf
+        </div>
+        <img src="img/Half-Elf.png" alt="Half-Elf">
+      </li>
+      <li data-race="Halfling">
+        <div class="race-name">
+          Halfling
+        </div>
+        <img src="img/Halfling.png" alt="Halfling">
+      </li>
+      <li data-race="Dwarf">
+        <div class="race-name">
+          Dwarf
+        </div>
+        <img src="img/Dwarf.png" alt="Dwarf">
+      </li>
+      <li data-race="Gnome">
+        <div class="race-name">
+          Gnome
+        </div>
+        <img src="img/Gnome.png" alt="Gnome">
+      </li>
+      <li data-race="Tiefling">
+        <div class="race-name">
+          Tiefling
+        </div>
+        <img src="img/Tiefling.png" alt="Tiefling">
+      </li>
+      <li data-race="Githyanki">
+        <div class="race-name">
+          Githyanki
+        </div>
+        <img src="img/Githyanki.png" alt="Githyanki">
+      </li>
     </ul>
 
     <!-- Lista das opções das sub-raças --> 
@@ -47,28 +83,129 @@
           <div class="race-name">
             High Elf
           </div>
-          <img src="img/Race_High_Elf.png" alt="High Elf">
+          <img src="img/High_Elf.png" alt="High Elf">
         </li>
         <li data-race="Elf" data-subrace="Wood Elf" class="collapse">
           <div class="race-name">
             Wood Elf
           </div>
-          <img src="img/Race_Wood_Elf.png" alt="Wood Elf">
+          <img src="img/Wood_Elf.png" alt="Wood Elf">
         </li>
         <li data-race="Drow" data-subrace="Lolth-Sworn Drow" class="collapse">
           <div class="race-name">
             Lolth-Sworn Drow
           </div>
-          <img src="img/Race_Lolth-Sworn_Drow.png" alt="Lolth Sworn Drow">
+          <img src="img/Lolth-Sworn_Drow.png" alt="Lolth Sworn Drow">
         </li>
         <li data-race="Drow" data-subrace="Seldarine Drow" class="collapse">
           <div class="race-name">
             Seldarine Drow
           </div>
-          <img src="img/Race_Seldarine_Drow.png" alt="Seldarine Drow">
-        </li>        
+          <img src="img/Seldarine_Drow.png" alt="Seldarine Drow">
+        </li>  
+
+        <!-- Sub-race options for Half-Elf -->
+
+        <li data-race="Half-Elf" data-subrace="High Half-Elf" class="collapse">
+          <div class="race-name">
+            High Half-Elf
+          </div>
+          <img src="img/High_Elf.png" alt="High Half-Elf">
+        </li>
+        <li data-race="Half-Elf" data-subrace="Wood Half-Elf" class="collapse">
+          <div class="race-name">
+            Wood Half-Elf
+          </div>
+          <img src="img/Wood_Half-Elf.png" alt="Wood Half-Elf">
+        </li>
+        <li data-race="Half-Elf" data-subrace="Drow Half-Elf" class="collapse">
+          <div class="race-name">
+            Drow Half-Elf
+          </div>
+          <img src="img/Drow_Half-Elf.png" alt="Drow Half-Elf">
+        </li>
+
+        <!-- Sub-race options for Halfling -->
+
+        <li data-race="Halfling" data-subrace="Lightfoot Halfling" class="collapse">
+          <div class="race-name">
+            Lightfoot Halfling
+          </div>
+          <img src="img/Lightfoot_Halfling.png" alt="Lightfoot Halfling">
+        </li>
+        <li data-race="Halfling" data-subrace="Strongheart Halfling" class="collapse">
+          <div class="race-name">
+            Strongheart Halfling
+          </div>
+          <img src="img/Strongheart_Halfling.png" alt="Strongheart Halfling">
+        </li>
+
+        <!-- Sub-race options for Dwarf -->
+
+        <li data-race="Dwarf" data-subrace="Gold Dwarf" class="collapse">
+          <div class="race-name">
+            Gold Dwarf
+          </div>
+          <img src="img/Gold_Dwarf.png" alt="Gold Dwarf">
+        </li>
+        <li data-race="Dwarf" data-subrace="Shield Dwarf" class="collapse">
+          <div class="race-name">
+            Shield Dwarf
+          </div>
+          <img src="img/Shield_Dwarf.png" alt="Shield Dwarf">
+        </li>
+        <li data-race="Dwarf" data-subrace="Duergar" class="collapse">
+          <div class="race-name">
+            Duergar
+          </div>
+          <img src="img/Duergar.png" alt="Duergar">
+        </li>
+
+        <!-- Sub-race options for Gnome -->
+
+        <li data-race="Gnome" data-subrace="Forest Gnome" class="collapse">
+          <div class="race-name">
+            Forest Gnome
+          </div>
+          <img src="img/Forest_Gnome.png" alt="Forest Gnome">
+        </li>
+        <li data-race="Gnome" data-subrace="Deep Gnome" class="collapse">
+          <div class="race-name">
+            Deep Gnome
+          </div>
+          <img src="img/Deep_Gnome.png" alt="Deep Gnome">
+        </li>
+        <li data-race="Gnome" data-subrace="Rock Gnome" class="collapse">
+          <div class="race-name">
+            Rock Gnome
+          </div>
+          <img src="img/Rock_Gnome.png" alt="Rock Gnome">
+        </li>
+
+        <!-- Sub-race options for Tiefling -->
+
+        <li data-race="Tiefling" data-subrace="Asmodeus Tiefling" class="collapse">
+          <div class="race-name">
+            Asmodeus Tiefling
+          </div>
+          <img src="img/Asmodeus_Tiefling.png" alt="Asmodeus Tiefling">
+        </li>
+        <li data-race="Tiefling" data-subrace="Mephistopheles Tiefling" class="collapse">
+          <div class="race-name">
+            Mephistopheles Tiefling
+          </div>
+          <img src="img/Mephistopheles_Tiefling.png" alt="Mephistopheles Tiefling">
+        </li>
+        <li data-race="Tiefling" data-subrace="Zariel Tiefling" class="collapse">
+          <div class="Zariel Tiefling">
+            Zariel Tiefling
+          </div>
+          <img src="img/Zariel_Tiefling.png" alt="Zariel Tiefling">
+        </li> 
       </ul>
     </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

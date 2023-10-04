@@ -8,7 +8,17 @@ body {
 .container {
   width: 500px;
   height: 700px;
-  background-color: rgba(141, 123, 104, 0.6);
+  /*background-color: rgba(141, 123, 104, 0.6);*/
+}
+
+#showRacesButton {
+  width: 30%;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #E5890A;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .races {
@@ -21,7 +31,7 @@ body {
 .races li {
   display: block;
   padding: 10px;
-  background-color: rgba(113, 98, 83, 0.4);
+  background-color: rgba(113, 98, 83, 0.6);
 }
 
 .races li div.race-name {
