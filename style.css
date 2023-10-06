@@ -1,3 +1,5 @@
+/* Estilos gerais */
+
 body {
   background-image: url("img/Snerario02.jpg");
   background-repeat: no-repeat;
@@ -6,13 +8,13 @@ body {
 
 .header {
   text-align: center;
-  background-color: #333; /* Add your header background color */
+  background-color: #333;
   color: white;
   padding: 10px;
 }
 
 .button-container {
-  text-align: left; /* Align the button to the left */
+  text-align: left;
   padding: 20px;
 }
 
@@ -25,31 +27,38 @@ body {
   font-size: 20px;
   cursor: pointer;
   display: block;
+  margin-left: 20px; /* Adicione esta linha para definir a margem esquerda */
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s; /* Adicione transições suaves para efeito de hover */
+}
+
+#showRacesButton:hover {
+  background-color: #FFA500; /* Nova cor de fundo quando hover */
+  color: #FFF; /* Nova cor do texto quando hover */
 }
 
 .container {
-  max-width: 800px; /* Adjust the maximum width as needed */
-  margin: 0 auto; /* Center the container horizontally */
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
-  /* border-radius: 10px;
-  overflow: hidden; /* Hide any content overflowing from the container */
 }
 
 .races {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Center races horizontally */
+  justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: rgba(113, 98, 83, 0.8); /* Background color moved here */
+  background-color: rgba(113, 98, 83, 0.8);
   border-radius: 10px;
 }
 
 .races li {
-  flex: 0 0 25%; /* Maximum 4 races per row (adjust as needed) */
+  flex: 0 0 25%;
   box-sizing: border-box;
   padding: 10px;
+  position: relative;
 }
 
 .races li div.race-name {
@@ -64,11 +73,87 @@ body {
   width: 100px;
   height: 100px;
   display: block;
-  margin: 0 auto; /* Center the image horizontally within the list item */
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito de hover para os ícones das raças e sub-raças */
+.races li img:hover,
+.race-options li img:hover {
+  transform: scale(1.1); /* Aumenta um pouco o tamanho do ícone quando hover */
+}
+
+/* Estilo para as sub-raças */
+
+.race-options {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  overflow: auto;
+}
+
+.race-options ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; /* Centraliza verticalmente */
+  background-color: rgba(113, 98, 83, 0.8);
+  border-radius: 10px;
+}
+
+.race-options li {
+  flex: 0 0 25%;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  margin: 10px;
+}
+
+.race-options li div.race-name {
+  display: block;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.race-options li img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilo para a sub-raça selecionada */
+.race-options li.active {
+  display: block;
 }
 
 .collapse {
-  display: none; /* Class to hide elements */
+  display: none;
 }
 
-/* Rest of your CSS styles */
+/* Estilo para o contêiner que envolve o texto e as sub-raças */
+.subrace-container {
+  text-align: center; /* Centralizar horizontalmente */
+  background-color: rgba(113, 98, 83, 0.8); /* Cor de fundo igual às sub-raças */
+  padding: 10px;
+  color: white; /* Cor do texto em branco */
+}
+
+/* Estilo para o texto "Escolha uma sub-raça" */
+.subrace-header {
+  font-weight: bold;
+  margin-bottom: 15px; /* Adiciona um espaço entre o texto e as sub-raças */
+  font-size: large;
+}

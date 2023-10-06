@@ -27,9 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const subRaceOptions = document.querySelectorAll("#race-options li");
     subRaceOptions.forEach(function (subRaceOption) {
       if (subRaceOption.dataset.race === race) {
-        subRaceOption.classList.toggle("collapse");
+        subRaceOption.classList.toggle("active");
       } else {
-        subRaceOption.classList.add("collapse");
+        subRaceOption.classList.remove("active");
       }
     });
   }

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Lista de raças</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -84,134 +85,135 @@
     <!-- Lista das opções das sub-raças --> 
 
     <div class="race-options collapse" id="race-options">
-      <p>Escolha uma sub-raça:</p>
-      <ul>
-        <li data-race="Elf" data-subrace="High Elf" class="collapse">
-          <div class="race-name">
-            High Elf
-          </div>
-          <img src="img/High_Elf.png" alt="High Elf">
-        </li>
-        <li data-race="Elf" data-subrace="Wood Elf" class="collapse">
-          <div class="race-name">
-            Wood Elf
-          </div>
-          <img src="img/Wood_Elf.png" alt="Wood Elf">
-        </li>
-        <li data-race="Drow" data-subrace="Lolth-Sworn Drow" class="collapse">
-          <div class="race-name">
-            Lolth-Sworn Drow
-          </div>
-          <img src="img/Lolth-Sworn_Drow.png" alt="Lolth Sworn Drow">
-        </li>
-        <li data-race="Drow" data-subrace="Seldarine Drow" class="collapse">
-          <div class="race-name">
-            Seldarine Drow
-          </div>
-          <img src="img/Seldarine_Drow.png" alt="Seldarine Drow">
-        </li>  
+      <div class="subrace-container">
+        <div class="subrace-header">Escolha uma sub-raça:</div>
+          <ul>
+            <li data-race="Elf" data-subrace="High Elf" class="collapse">
+              <div class="race-name">
+                High Elf
+              </div>
+              <img src="img/High_Elf.png" alt="High Elf">
+            </li>
+            <li data-race="Elf" data-subrace="Wood Elf" class="collapse">
+              <div class="race-name">
+                Wood Elf
+              </div>
+              <img src="img/Wood_Elf.png" alt="Wood Elf">
+            </li>
+            <li data-race="Drow" data-subrace="Lolth-Sworn Drow" class="collapse">
+              <div class="race-name">
+                Lolth-Sworn Drow
+              </div>
+              <img src="img/Lolth-Sworn_Drow.png" alt="Lolth Sworn Drow">
+            </li>
+            <li data-race="Drow" data-subrace="Seldarine Drow" class="collapse">
+              <div class="race-name">
+                Seldarine Drow
+              </div>
+              <img src="img/Seldarine_Drow.png" alt="Seldarine Drow">
+            </li>  
 
-        <!-- Sub-race options for Half-Elf -->
+            <!-- Sub-race options for Half-Elf -->
 
-        <li data-race="Half-Elf" data-subrace="High Half-Elf" class="collapse">
-          <div class="race-name">
-            High Half-Elf
-          </div>
-          <img src="img/High_Elf.png" alt="High Half-Elf">
-        </li>
-        <li data-race="Half-Elf" data-subrace="Wood Half-Elf" class="collapse">
-          <div class="race-name">
-            Wood Half-Elf
-          </div>
-          <img src="img/Wood_Half-Elf.png" alt="Wood Half-Elf">
-        </li>
-        <li data-race="Half-Elf" data-subrace="Drow Half-Elf" class="collapse">
-          <div class="race-name">
-            Drow Half-Elf
-          </div>
-          <img src="img/Drow_Half-Elf.png" alt="Drow Half-Elf">
-        </li>
+            <li data-race="Half-Elf" data-subrace="High Half-Elf" class="collapse">
+              <div class="race-name">
+                High Half-Elf
+              </div>
+              <img src="img/High_Elf.png" alt="High Half-Elf">
+            </li>
+            <li data-race="Half-Elf" data-subrace="Wood Half-Elf" class="collapse">
+              <div class="race-name">
+                Wood Half-Elf
+              </div>
+              <img src="img/Wood_Half-Elf.png" alt="Wood Half-Elf">
+            </li>
+            <li data-race="Half-Elf" data-subrace="Drow Half-Elf" class="collapse">
+              <div class="race-name">
+                Drow Half-Elf
+              </div>
+              <img src="img/Drow_Half-Elf.png" alt="Drow Half-Elf">
+            </li>
 
-        <!-- Sub-race options for Halfling -->
+            <!-- Sub-race options for Halfling -->
 
-        <li data-race="Halfling" data-subrace="Lightfoot Halfling" class="collapse">
-          <div class="race-name">
-            Lightfoot Halfling
-          </div>
-          <img src="img/Lightfoot_Halfling.png" alt="Lightfoot Halfling">
-        </li>
-        <li data-race="Halfling" data-subrace="Strongheart Halfling" class="collapse">
-          <div class="race-name">
-            Strongheart Halfling
-          </div>
-          <img src="img/Strongheart_Halfling.png" alt="Strongheart Halfling">
-        </li>
+            <li data-race="Halfling" data-subrace="Lightfoot Halfling" class="collapse">
+              <div class="race-name">
+                Lightfoot Halfling
+              </div>
+              <img src="img/Lightfoot_Halfling.png" alt="Lightfoot Halfling">
+            </li>
+            <li data-race="Halfling" data-subrace="Strongheart Halfling" class="collapse">
+              <div class="race-name">
+                Strongheart Halfling
+              </div>
+              <img src="img/Strongheart_Halfling.png" alt="Strongheart Halfling">
+            </li>
 
-        <!-- Sub-race options for Dwarf -->
+            <!-- Sub-race options for Dwarf -->
 
-        <li data-race="Dwarf" data-subrace="Gold Dwarf" class="collapse">
-          <div class="race-name">
-            Gold Dwarf
-          </div>
-          <img src="img/Gold_Dwarf.png" alt="Gold Dwarf">
-        </li>
-        <li data-race="Dwarf" data-subrace="Shield Dwarf" class="collapse">
-          <div class="race-name">
-            Shield Dwarf
-          </div>
-          <img src="img/Shield_Dwarf.png" alt="Shield Dwarf">
-        </li>
-        <li data-race="Dwarf" data-subrace="Duergar" class="collapse">
-          <div class="race-name">
-            Duergar
-          </div>
-          <img src="img/Duergar.png" alt="Duergar">
-        </li>
+            <li data-race="Dwarf" data-subrace="Gold Dwarf" class="collapse">
+              <div class="race-name">
+                Gold Dwarf
+              </div>
+              <img src="img/Gold_Dwarf.png" alt="Gold Dwarf">
+            </li>
+            <li data-race="Dwarf" data-subrace="Shield Dwarf" class="collapse">
+              <div class="race-name">
+                Shield Dwarf
+              </div>
+              <img src="img/Shield_Dwarf.png" alt="Shield Dwarf">
+            </li>
+            <li data-race="Dwarf" data-subrace="Duergar" class="collapse">
+              <div class="race-name">
+                Duergar
+              </div>
+              <img src="img/Duergar.png" alt="Duergar">
+            </li>
 
-        <!-- Sub-race options for Gnome -->
+            <!-- Sub-race options for Gnome -->
 
-        <li data-race="Gnome" data-subrace="Forest Gnome" class="collapse">
-          <div class="race-name">
-            Forest Gnome
-          </div>
-          <img src="img/Forest_Gnome.png" alt="Forest Gnome">
-        </li>
-        <li data-race="Gnome" data-subrace="Deep Gnome" class="collapse">
-          <div class="race-name">
-            Deep Gnome
-          </div>
-          <img src="img/Deep_Gnome.png" alt="Deep Gnome">
-        </li>
-        <li data-race="Gnome" data-subrace="Rock Gnome" class="collapse">
-          <div class="race-name">
-            Rock Gnome
-          </div>
-          <img src="img/Rock_Gnome.png" alt="Rock Gnome">
-        </li>
+            <li data-race="Gnome" data-subrace="Forest Gnome" class="collapse">
+              <div class="race-name">
+                Forest Gnome
+              </div>
+              <img src="img/Forest_Gnome.png" alt="Forest Gnome">
+            </li>
+            <li data-race="Gnome" data-subrace="Deep Gnome" class="collapse">
+              <div class="race-name">
+                Deep Gnome
+              </div>
+              <img src="img/Deep_Gnome.png" alt="Deep Gnome">
+            </li>
+            <li data-race="Gnome" data-subrace="Rock Gnome" class="collapse">
+              <div class="race-name">
+                Rock Gnome
+              </div>
+              <img src="img/Rock_Gnome.png" alt="Rock Gnome">
+            </li>
 
-        <!-- Sub-race options for Tiefling -->
+            <!-- Sub-race options for Tiefling -->
 
-        <li data-race="Tiefling" data-subrace="Asmodeus Tiefling" class="collapse">
-          <div class="race-name">
-            Asmodeus Tiefling
-          </div>
-          <img src="img/Asmodeus_Tiefling.png" alt="Asmodeus Tiefling">
-        </li>
-        <li data-race="Tiefling" data-subrace="Mephistopheles Tiefling" class="collapse">
-          <div class="race-name">
-            Mephistopheles Tiefling
-          </div>
-          <img src="img/Mephistopheles_Tiefling.png" alt="Mephistopheles Tiefling">
-        </li>
-        <li data-race="Tiefling" data-subrace="Zariel Tiefling" class="collapse">
-          <div class="Zariel Tiefling">
-            Zariel Tiefling
-          </div>
-          <img src="img/Zariel_Tiefling.png" alt="Zariel Tiefling">
-        </li> 
-      </ul>
+            <li data-race="Tiefling" data-subrace="Asmodeus Tiefling" class="collapse">
+              <div class="race-name">
+                Asmodeus Tiefling
+              </div>
+              <img src="img/Asmodeus_Tiefling.png" alt="Asmodeus Tiefling">
+            </li>
+            <li data-race="Tiefling" data-subrace="Mephistopheles Tiefling" class="collapse">
+              <div class="race-name">
+                Mephistopheles Tiefling
+              </div>
+              <img src="img/Mephistopheles_Tiefling.png" alt="Mephistopheles Tiefling">
+            </li>
+            <li data-race="Tiefling" data-subrace="Zariel Tiefling" class="collapse">
+              <div class="Zariel Tiefling">
+                Zariel Tiefling
+              </div>
+              <img src="img/Zariel_Tiefling.png" alt="Zariel Tiefling">
+            </li> 
+          </ul>
+      </div>  
     </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
