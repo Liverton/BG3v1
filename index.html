@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="header">
-    <!-- Add other header elements here -->
-  </div>
+  <header>
+    <img src="img/BD3logo.png" alt="Logo do Site">  
+  </header>
 
   <div class="button-container"></div>
     <button id="showRacesButton" data-toggle="collapse" data-target="#races-list">
@@ -19,6 +19,7 @@
 
   <div class="container">
     <ul class="races collapse" id="races-list">
+      <!-- Raças -->
       <li data-race="Human">
         <div class="race-name">
           Human
@@ -43,7 +44,6 @@
         </div>
         <img src="img/Half-Orc.png" alt="Half-Orc">
       </li>
-      <!-- New Races -->
       <li data-race="Half-Elf">
         <div class="race-name">
           Half-Elf
@@ -81,13 +81,12 @@
         <img src="img/Githyanki.png" alt="Githyanki">
       </li>
     </ul>
-
-    <!-- Lista das opções das sub-raças --> 
-
+    <!-- Lista de Sub-raças -->
     <div class="race-options collapse" id="race-options">
       <div class="subrace-container">
-        <div class="subrace-header">Escolha uma sub-raça:</div>
+        <div class="subrace-header">Select Subrace:</div>
           <ul>
+            <!-- Sub-race options for Elf -->
             <li data-race="Elf" data-subrace="High Elf" class="collapse">
               <div class="race-name">
                 High Elf
@@ -100,6 +99,7 @@
               </div>
               <img src="img/Wood_Elf.png" alt="Wood Elf">
             </li>
+            <!-- Sub-race options for Drow -->
             <li data-race="Drow" data-subrace="Lolth-Sworn Drow" class="collapse">
               <div class="race-name">
                 Lolth-Sworn Drow
@@ -112,9 +112,7 @@
               </div>
               <img src="img/Seldarine_Drow.png" alt="Seldarine Drow">
             </li>  
-
             <!-- Sub-race options for Half-Elf -->
-
             <li data-race="Half-Elf" data-subrace="High Half-Elf" class="collapse">
               <div class="race-name">
                 High Half-Elf
@@ -133,9 +131,7 @@
               </div>
               <img src="img/Drow_Half-Elf.png" alt="Drow Half-Elf">
             </li>
-
             <!-- Sub-race options for Halfling -->
-
             <li data-race="Halfling" data-subrace="Lightfoot Halfling" class="collapse">
               <div class="race-name">
                 Lightfoot Halfling
@@ -148,9 +144,7 @@
               </div>
               <img src="img/Strongheart_Halfling.png" alt="Strongheart Halfling">
             </li>
-
             <!-- Sub-race options for Dwarf -->
-
             <li data-race="Dwarf" data-subrace="Gold Dwarf" class="collapse">
               <div class="race-name">
                 Gold Dwarf
@@ -169,9 +163,7 @@
               </div>
               <img src="img/Duergar.png" alt="Duergar">
             </li>
-
             <!-- Sub-race options for Gnome -->
-
             <li data-race="Gnome" data-subrace="Forest Gnome" class="collapse">
               <div class="race-name">
                 Forest Gnome
@@ -190,9 +182,7 @@
               </div>
               <img src="img/Rock_Gnome.png" alt="Rock Gnome">
             </li>
-
             <!-- Sub-race options for Tiefling -->
-
             <li data-race="Tiefling" data-subrace="Asmodeus Tiefling" class="collapse">
               <div class="race-name">
                 Asmodeus Tiefling

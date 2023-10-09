@@ -1,17 +1,27 @@
 /* Estilos gerais */
 
 body {
-  background-image: url("img/Snerario02.jpg");
-  background-repeat: no-repeat;
+  background: url("img/Snerario02.jpg") no-repeat;
   background-size: cover;
 }
 
-.header {
-  text-align: center;
-  background-color: #333;
+/* Estilo para o header */
+header {
+  background-color: rgb(74, 61, 48);
   color: white;
-  padding: 10px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
+
+/* Estilo para o banner */
+header img {
+  width: 20%; /* A imagem ocupa toda a largura do header */
+  height: 10%; /* A altura se ajusta automaticamente para manter a proporção */
+  
+}
+
 
 .button-container {
   text-align: left;

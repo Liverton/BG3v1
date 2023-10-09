@@ -53,3 +53,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+const raceOptions = document.getElementById("race-options");
+
+raceOptions.addEventListener("click", function (event) {
+  // Se o clique não for no quadro de sub-raça, oculte a seção de sub-raças
+  if (!event.target.closest(".race-options ul")) {
+    raceOptions.classList.add("collapse");
+  }
+});
